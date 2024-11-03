@@ -10,6 +10,48 @@
 //
 // Use only what you learned! No loops yet, so you'll have to use recursion!
 
+// fn factorial(n: u32) -> u32 {
+//     let mut counter = n;
+//     let mut fact: u32 = 0;
+//     if counter > 0 {
+//         fact += n * (counter - 1);
+//         counter -= 1;
+//         println!("Current factorial: {}", fact);
+//         println!("Current count: {}", counter);
+//         factorial(counter);
+//     } else {
+//         return 1;
+//     }
+//     fact
+// }
+
+// fn factorial(n: u32) -> u32 {
+//     let mut counter = 1;
+//     let mut fac: u32 = 0;
+//     if counter < n && counter > 0 {
+//         fac += n * counter;
+//         println!("Current factorial: {}", fac);
+//         println!("Current count: {}", counter);
+//         counter += 1;
+//         factorial(n);
+//     } else {
+//         return 1;
+//     }
+//     fac
+// }
+
+/*
+   n is the initial value to calculate the factorial
+   n needs to be decremented for each recursive function call until 1 or 0
+   and multiplied by the previous value of n
+*/
+
+fn factorial(n: u32) -> u32 {
+    if n == 0 {
+        return 1;
+    }
+}
+
 #[cfg(test)]
 mod tests {
     use crate::factorial;
