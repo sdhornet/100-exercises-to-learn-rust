@@ -61,12 +61,12 @@ impl Order {
         &self.product_name
     }
 
-    pub fn quantity(&self) -> i32 {
-        self.quantity
+    pub fn quantity(&self) -> &i32 {
+        &self.quantity
     }
 
-    pub fn unit_price(&self) -> i32 {
-        self.unit_price
+    pub fn unit_price(&self) -> &i32 {
+        &self.unit_price
     }
 
     pub fn set_product_name(&mut self, new_name: String) {
